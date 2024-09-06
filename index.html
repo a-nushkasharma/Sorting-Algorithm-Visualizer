@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Sorting Visualizer</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn-group mb-3" role="group">
+                    <button id="bubbleSortBtn" class="btn btn-outline-dark">Bubble Sort</button>
+                    <button id="selectionSortBtn" class="btn btn-outline-dark">Selection Sort</button>
+                    <button id="insertionSortBtn" class="btn btn-outline-dark">Insertion Sort</button>
+                    <button id="mergeSortBtn" class="btn btn-outline-dark">Merge Sort</button>
+                    <button id="bogoSortBtn" class="btn btn-outline-dark">Bogo Sort</button>
+                </div>
+                <button id="generateArrayBtn" class="btn btn-secondary mb-3">Generate New Array</button>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="sizeSlider" class="form-label">Array Size</label>
+                <div class="d-flex justify-content-between">
+                    <span>Low</span> <!-- Swap positions here -->
+                    <input type="range" class="form-range" id="sizeSlider" min="5" max="50" value="15">
+                    <span>High</span> <!-- Swap positions here -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="speedSlider" class="form-label">Sorting Speed (ms)</label>
+                <div class="d-flex justify-content-between">
+                    <span>High</span> <!-- Swap positions here -->
+                    <input type="range" class="form-range" id="speedSlider" min="10" max="1000" value="100">
+                    <span>Low</span> <!-- Swap positions here -->
+                </div>
+            </div>
+        </div>
+        <div class="array-container d-flex justify-content-center"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<style>
+    body {
+        background-color: #b2bfda; /* Dark shade */
+    }
+</style>
+</html>
